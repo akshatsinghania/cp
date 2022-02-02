@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "terminal-art": "^1.3.1"
+  }
+}
