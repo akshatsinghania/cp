@@ -1,2 +1,0 @@
-g++-11 -std=c++17 solution.cpp
-./a.out
