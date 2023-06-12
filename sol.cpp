@@ -3,22 +3,34 @@ using namespace std;
 
 #define int long long
 
-int sum_(int a, int n)
-{
-    return (a * n) + ((pow(n, 2) - n) / 2);
-}
-
 void solve()
 {
-    cout << sum_(2, 10) << endl;
+    int s = 0;
+    int l = 4000000;
+    int a = 1;
+    int b = 2;
+    int count = 1;
+    while (true)
+    {
+        int c = a + b;
+        if (c > l)
+            break;
+        if (c % 2 == 0)
+            count += c;
+        a = b;
+        b = c;
+        cout << c << " " << endl;
+    }
+    cout << count << endl;
 }
 
 signed main()
 {
-    // in();
+
     int t = 1;
-    // cin >> t;
     while (t--)
+    {
         solve();
+    }
     return 0;
 }
